@@ -1,4 +1,8 @@
 /*animation code*/
+@-webkit-keyframes example {
+  from {color: black;}
+  to {color: pink;}
+}
 @keyframes example {
   from {color: black;}
   to {color: pink;}
@@ -20,6 +24,10 @@ h1 {
 	border-right: 2px solid pink;
 	width: 400px;
 	text-align: center;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
 	animation-name: example;
 	animation-duration: 4s;
 	animation-direction: alternate;
